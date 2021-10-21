@@ -1,0 +1,55 @@
+// Font Family
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+// X Center Y Center
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// X Center Y Start
+@mixin center-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+// X Center Y Start
+@mixin center-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+// X Top Y Left
+@mixin top-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+// X Top Y Right
+@mixin top-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+// X Bottom Y Left
+@mixin bottom-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+// X Bottom Y Right
+@mixin bottom-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

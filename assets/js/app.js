@@ -1,4 +1,6 @@
-import { UI } from "./ui.js";
+import {
+  UI
+} from "./ui.js";
 const ui = new UI();
 
 // Setup module
@@ -10,7 +12,20 @@ const ecommerceBasic = (function () {
   //
 
   // Hover Effect
-  const _example = function () {
+  const _productSlider = function () {
+    $(".slider").slick({
+      infinite: true,
+      speed: 300,
+      fade: true,
+      cssEase: 'linear'
+
+      // prevArrow: '<button class="icon-chevron_up"><</button>',
+      // nextArrow: '<button class="icon-chevron_down">></button>',
+    });
+    $('.product-thumbnail').on('click', function () {
+      let slideIndex = $(this).data('slide');
+      $('.slider').slick('slickGoTo', slideIndex, false);
+    });
     ui.exampleUI();
   };
 
@@ -21,7 +36,7 @@ const ecommerceBasic = (function () {
 
   return {
     init: function () {
-      _example();
+      _productSlider();
     },
   };
 })();

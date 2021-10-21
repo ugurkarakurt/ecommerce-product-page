@@ -295,4 +295,134 @@ table {
   -webkit-animation: dropMenuUp 1000ms linear both;
   animation: dropMenuUp 1000ms linear both; }
 
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-VariableFont_wght.ttf"); }
+* {
+  font-family: "Comfortaa", cursive !important;
+  box-sizing: border-box; }
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header .navbar {
+    width: 1199px;
+    height: 8rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #eaebf1; }
+    header .navbar .navbar-brand {
+      width: 10rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      header .navbar .navbar-brand h1 {
+        font-weight: 900;
+        font-size: 2rem; }
+    header .navbar nav {
+      flex: 1 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header .navbar nav .navbar-links {
+        flex: 1 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0rem 2rem; }
+        header .navbar nav .navbar-links li {
+          margin: 0 .5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          header .navbar nav .navbar-links li input {
+            display: none; }
+            header .navbar nav .navbar-links li input:checked + label {
+              color: black; }
+          header .navbar nav .navbar-links li label {
+            padding: 1rem .5rem;
+            font-weight: bold;
+            display: block;
+            cursor: pointer;
+            font-size: .9rem;
+            color: #b6bcc8; }
+      header .navbar nav .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        header .navbar nav .navbar-nav .mini-basket {
+          cursor: pointer;
+          margin-right: 3rem; }
+        header .navbar nav .navbar-nav .profile-button {
+          cursor: pointer; }
+          header .navbar nav .navbar-nav .profile-button img {
+            width: 60px;
+            height: 60px; }
+
+main {
+  height: calc(100vh - 114px);
+  width: 100%; }
+  main .container {
+    display: flex;
+    margin: 0 auto;
+    width: 1199px;
+    height: 100%;
+    padding: 5rem 4rem; }
+    main .container .prodcut-slider-wrapper {
+      flex: 1 1; }
+      main .container .prodcut-slider-wrapper .slider {
+        margin: 0 auto;
+        background-color: #ffffff;
+        width: 450px;
+        height: 500px; }
+        main .container .prodcut-slider-wrapper .slider img {
+          cursor: w-resize;
+          margin-right: 2rem;
+          width: 100%;
+          height: 100%;
+          border-radius: 1rem; }
+      main .container .prodcut-slider-wrapper .slider-thumbnail {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        margin-top: -1rem; }
+        main .container .prodcut-slider-wrapper .slider-thumbnail ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          main .container .prodcut-slider-wrapper .slider-thumbnail ul li input {
+            display: none; }
+            main .container .prodcut-slider-wrapper .slider-thumbnail ul li input:checked + label {
+              border: 3px solid #ff7d1a; }
+              main .container .prodcut-slider-wrapper .slider-thumbnail ul li input:checked + label img {
+                opacity: .3; }
+          main .container .prodcut-slider-wrapper .slider-thumbnail ul li label {
+            position: relative;
+            border-radius: 1rem;
+            display: block;
+            width: 90px;
+            height: 90px;
+            overflow: hidden; }
+            main .container .prodcut-slider-wrapper .slider-thumbnail ul li label img {
+              cursor: pointer;
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              object-fit: cover; }
+    main .container .product-description {
+      flex: 1 1;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
 /*# sourceMappingURL=style.css.map */

@@ -6,14 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="" type="image/icon">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Periodic Table</title>
 </head>
 
 <body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-brand">
+                <h1>snekars</h1>
+            </div>
+            <nav>
+                <ul class="navbar-links">
+                    <li>
+                        <input type="radio" name="type" id="collections" checked>
+                        <label for="collections">Collections</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="type" id="men">
+                        <label for="men">Men</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="type" id="women">
+                        <label for="women">Women</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="type" id="about">
+                        <label for="about">About</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="type" id="contact">
+                        <label for="contact">Contact</label>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <div class="mini-basket">
+                        <img src="./assets/images/icon-cart.svg" alt="basket">
+                    </div>
+                    <div class="profile-button">
+                        <img src="./assets/images/image-avatar.png" alt="pp">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Hello World</h1>
+    <main>
+        <div class="container">
+            <div class="prodcut-slider-wrapper">
+                <div class="product-slider">
+                    <div class="slider">
+                        <div>
+                            <img src="./assets/images/image-product-1.jpg" alt="p-1">
+                        </div>
+                        <div>
+                            <img src="./assets/images/image-product-2.jpg" alt="p-2">
+                        </div>
+                        <div>
+                            <img src="./assets/images/image-product-3.jpg" alt="p-3">
+                        </div>
+                        <div>
+                            <img src="./assets/images/image-product-4.jpg" alt="p-4">
+                        </div>
+                    </div>
+                    <div class="slider-thumbnail">
+                        <ul>
+                            <li>
+                                <input type="radio" name="image" id="p-1" checked>
+                                <label for="p-1">
+                                    <img data-slide="0" class="product-thumbnail"
+                                        src="./assets/images/image-product-1-thumbnail.jpg" alt="p-1">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="image" id="p-2">
+                                <label for="p-2">
+                                    <img data-slide="1" class="product-thumbnail"
+                                        src="./assets/images/image-product-2-thumbnail.jpg" alt="p-2">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="image" id="p-3">
+                                <label for="p-3">
+                                    <img data-slide="2" class="product-thumbnail"
+                                        src="./assets/images/image-product-3-thumbnail.jpg" alt="p-3">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="image" id="p-4">
+                                <label for="p-4">
+                                    <img data-slide="3" class="product-thumbnail"
+                                        src="./assets/images/image-product-4-thumbnail.jpg" alt="p-4">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="product-description">
+                asda
+            </div>
+        </div>
+    </main>
 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="module" src="./assets/js/app.js"></script>
 </body>
 
