@@ -9,13 +9,44 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Periodic Table</title>
+    <title>Ecommerce Product Page</title>
 </head>
 
 <body>
     <header>
         <div class="navbar">
             <div class="navbar-brand">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <img src="./assets/images/icon-menu.svg" alt="">
+                </label>
+                <div class="sidebar-links">
+                    <ul class="sidebar-animation">
+                        <li>
+                            <img class="close-btn" src="./assets/images/icon-close.svg" alt="">
+                        </li>
+                        <li>
+                            <input type="radio" name="type" id="collections">
+                            <label for="collections">Collections</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="type" id="men">
+                            <label for="men">Men</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="type" id="women">
+                            <label for="women">Women</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="type" id="about">
+                            <label for="about">About</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="type" id="contact">
+                            <label for="contact">Contact</label>
+                        </li>
+                    </ul>
+                </div>
                 <h1>snekars</h1>
             </div>
             <nav>
@@ -43,10 +74,54 @@
                 </ul>
                 <div class="navbar-nav">
                     <div class="mini-basket">
-                        <img src="./assets/images/icon-cart.svg" alt="basket">
+                        <img loading="lazy" src="./assets/images/icon-cart.svg" alt="basket">
+                    </div>
+                    <div class="basket">
+                        <div class="cart-header">
+                            <span>Cart</span>
+                        </div>
+                        <div class="cart-body">
+                            <div class="product">
+                                <div class="product-image">
+                                    <img src="./assets/images/image-product-1-thumbnail.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        Name
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="mercant">12312TL</span>
+                                        <span class="total-price">123213</span>
+                                    </div>
+                                </div>
+                                <div class="product-delete">
+                                    <img src="./assets/images/icon-delete.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-image">
+                                    <img src="./assets/images/image-product-1-thumbnail.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name">
+                                        Name
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="mercant">12312TL</span>
+                                        <span class="total-price">123213</span>
+                                    </div>
+                                </div>
+                                <div class="product-delete">
+                                    <img src="./assets/images/icon-delete.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <button>Checkout</button>
+                        </div>
                     </div>
                     <div class="profile-button">
-                        <img src="./assets/images/image-avatar.png" alt="pp">
+                        <img loading="lazy" src="./assets/images/image-avatar.png" alt="pp">
                     </div>
                 </div>
             </nav>
@@ -59,16 +134,16 @@
                 <div class="product-slider">
                     <div class="slider">
                         <div>
-                            <img src="./assets/images/image-product-1.jpg" alt="p-1">
+                            <img loading="lazy" src="./assets/images/image-product-1.jpg" alt="p-1">
                         </div>
                         <div>
-                            <img src="./assets/images/image-product-2.jpg" alt="p-2">
+                            <img loading="lazy" src="./assets/images/image-product-2.jpg" alt="p-2">
                         </div>
                         <div>
-                            <img src="./assets/images/image-product-3.jpg" alt="p-3">
+                            <img loading="lazy" src="./assets/images/image-product-3.jpg" alt="p-3">
                         </div>
                         <div>
-                            <img src="./assets/images/image-product-4.jpg" alt="p-4">
+                            <img loading="lazy" src="./assets/images/image-product-4.jpg" alt="p-4">
                         </div>
                     </div>
                     <div class="slider-thumbnail">
@@ -76,28 +151,28 @@
                             <li>
                                 <input type="radio" name="image" id="p-1" checked>
                                 <label for="p-1">
-                                    <img data-slide="0" class="product-thumbnail"
+                                    <img loading="lazy" data-slide="0" class="product-thumbnail"
                                         src="./assets/images/image-product-1-thumbnail.jpg" alt="p-1">
                                 </label>
                             </li>
                             <li>
                                 <input type="radio" name="image" id="p-2">
                                 <label for="p-2">
-                                    <img data-slide="1" class="product-thumbnail"
+                                    <img loading="lazy" data-slide="1" class="product-thumbnail"
                                         src="./assets/images/image-product-2-thumbnail.jpg" alt="p-2">
                                 </label>
                             </li>
                             <li>
                                 <input type="radio" name="image" id="p-3">
                                 <label for="p-3">
-                                    <img data-slide="2" class="product-thumbnail"
+                                    <img loading="lazy" data-slide="2" class="product-thumbnail"
                                         src="./assets/images/image-product-3-thumbnail.jpg" alt="p-3">
                                 </label>
                             </li>
                             <li>
                                 <input type="radio" name="image" id="p-4">
                                 <label for="p-4">
-                                    <img data-slide="3" class="product-thumbnail"
+                                    <img loading="lazy" data-slide="3" class="product-thumbnail"
                                         src="./assets/images/image-product-4-thumbnail.jpg" alt="p-4">
                                 </label>
                             </li>
@@ -106,7 +181,37 @@
                 </div>
             </div>
             <div class="product-description">
-                asda
+                <div class="product-information-wrapper">
+                    <span class="brand-name">SNEAKER COMPANY</span>
+                    <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+                    <p class="description">These low-profile sneakers are your perfect casual wear companion.
+                        Featuring a durable rubber outer sole, they'll withstand everything the weather can offer
+                    </p>
+                </div>
+                <div class="product-price-wrapper">
+                    <div class="price-wrapper">
+                        <span class="price mercant">9999 TL</span>
+                        <span class="discount">50% </span>
+                    </div>
+                    <del class="old-product-price">12000 tl</del>
+                </div>
+                <div class="add-to-cart">
+                    <div class="product-quantity">
+                        <button class="shop-minus">
+                            <img loading="lazy" data-slide="2" class="product-thumbnail"
+                                src="./assets/images/icon-minus.svg" alt="p-3">
+                        </button>
+                        <div class="quantity">0</div>
+                        <button class="shop-plus">
+                            <img loading="lazy" data-slide="2" class="product-thumbnail"
+                                src="./assets/images/icon-plus.svg" alt="p-3">
+                        </button>
+                    </div>
+                    <button class="add-to-cart-btn">
+                        <img src="./assets/images/icon-cart.svg" alt="cart">
+                        Add to cart
+                    </button>
+                </div>
             </div>
         </div>
     </main>
